@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cây Thông Giáng Sinh</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a2e;
+        }
+        .tree {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .layer {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #0b6623;
+            margin-bottom: -30px;
+        }
+        .trunk {
+            width: 30px;
+            height: 60px;
+            background-color: #8b4513;
+        }
+        .star {
+            color: gold;
+            font-size: 3rem;
+            position: absolute;
+            top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tree">
+        <div class="star">&#9733;</div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="trunk"></div>
+    </div>
+</body>
+</html>
